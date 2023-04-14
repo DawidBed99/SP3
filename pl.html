@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <img class="PL_LOGO" src="images/PL-1400.png" />
+    <header>
+      <h1 class="league">Premier League</h1>
+    </header>
+    <ul class="menu">
+      <li class="desc">Informacje o lidze</li>
+      <li class="desc">Tabela</li>
+      <li class="desc">Drużyny</li>
+      <li class="desc">Media</li>
+    </ul>
+
+    <div class="container">
+      <div class="media hidden">
+        <h2 class="media_title">Najlepsze gole sezonu 2022/23 do tej pory</h2>
+        <button class="close4">X</button>
+        <iframe
+          class="movie_class"
+          src="https://www.youtube.com/embed/BZ_3jPrIlxc"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="popup__info hidden">
+        <button class="close">X</button>
+        <p class="info">
+          Premier League - najwyższa w hierarchii klasa męskich ligowych
+          rozgrywek piłkarskich w Anglii, będąca jednocześnie najwyższym
+          szczeblem centralnym (I poziom ligowy), utworzona 20 lutego 1992 i od
+          tego momentu zarządzana przez FA Premier League.<br />
+          Zmagania w jej ramach toczą się cyklicznie (co sezon od sierpnia do
+          maja), systemem kołowym i przeznaczone są dla 20 najlepszych
+          angielskich i walijskich klubów piłkarskich. Ich triumfator zostaje
+          mistrzem Anglii, zaś najsłabsze drużyny są relegowane do EFL
+          Championship. <br />Liga została założona 20 lutego 1992 jako FA
+          Premier League, gdy kluby Football League First Division zdecydowały
+          się uniezależnić od The Football League i Football Association. Od
+          tego czasu Premier League jest najchętniej oglądaną ligą sportową na
+          świecie. Są to także najbardziej dochodowe rozgrywki piłkarskie. W
+          sezonie 2007/2008 obroty klubów wyniosły 1,93 miliardów funtów (3,15
+          miliardów dolarów). <br />Od czasu założenia w rozgrywkach Premier
+          League brało udział 49 drużyn.
+        </p>
+      </div>
+      <div class="popup__info2 hidden">
+        <button class="close2">X</button>
+        <div class="table">
+          <iframe
+            id="Iframe"
+            src="https://www.scoreaxis.com/widget/standings-widget/8?&amp;inst=84773"
+          ></iframe>
+        </div>
+      </div>
+      <div class="teams">
+        <button class="close3">X</button>
+        <ul class="teams_league">
+          <li class="team">
+            Manchester City
+            <img src="/images/mac_240px.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Liverpool
+            <img src="/images/liv.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Chelsea
+            <img src="/images/chel.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Tottenham Hotspur
+            <img src="/images/tot.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Arsenal
+            <img src="/images/ars.png" class="mini_logo ars_logo" />
+          </li>
+          <li class="team">
+            Macnhester United
+            <img src="/images/man.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            West Ham United
+            <img src="/images/whu.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Leicester City
+            <img src="/images/lei.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Brighton & Hove Albion
+            <img src="/images/Bri.png" class="mini_logo bri_logo" />
+          </li>
+          <li class="team">
+            Wolverhampton Wanderers
+            <img src="/images/wolv.png" class="mini_logo wolv_logo" />
+          </li>
+        </ul>
+        <ul class="teams_league2">
+          <li class="team newcastle">
+            Newcastle United
+            <img src="/images/new.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Crystal Palace
+            <img src="/images/cp.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Brentford <img src="/images/bren.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Aston Villa <img src="/images/ast.png" class="mini_logo ast_logo" />
+          </li>
+          <li class="team">
+            Southampton <img src="/images/sout.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Everton <img src="/images/eve.png" class="mini_logo" />
+          </li>
+          <li class="team">
+            Leeds United
+            <img src="/images/Leeds.png" class="mini_logo leeds_logo" />
+          </li>
+          <li class="team">
+            Fulham
+            <img src="/images/fulham.png" class="mini_logo fulham_logo" />
+          </li>
+          <li class="team">
+            Bournemouth
+            <img src="/images/afcb.png" class="mini_logo afcb_logo" />
+          </li>
+          <li class="team">
+            Nottingham Forest
+            <img src="/images/nott.png" class="mini_logo" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

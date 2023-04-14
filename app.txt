@@ -1,0 +1,43 @@
+Wczesniejsza wersja
+
+INFO.addEventListener("click", () => {
+  POPUP.classList.remove("hidden");
+  POPUPP.classList.add("hidden");
+  POPUP3.classList.add("hidden");
+});
+
+POPUP_CLOSE.addEventListener("click", () => {
+  POPUP.classList.add("popup__fadeOut");
+  setTimeout(() => {
+    POPUP.classList.add("hidden");
+    POPUP.classList.remove("popup__fadeOut");
+  }, 300);
+});
+
+TABLE.addEventListener("click", () => {
+  POPUPP.classList.remove("hidden");
+  POPUP.classList.add("hidden");
+  POPUP3.classList.add("hidden");
+});
+
+POPUP_CLOSE2.addEventListener("click", () => {
+  POPUPP.classList.add("popup__fadeOut2");
+  setTimeout(() => {
+    POPUPP.classList.add("hidden");
+    POPUPP.classList.remove("popup__fadeOut2");
+  }, 300);
+});
+TEAMS.addEventListener("click", () => {
+  POPUP3.classList.remove("hidden");
+  POPUP.classList.add("hidden");
+  POPUPP.classList.add("hidden");
+});
+
+POPUP_CLOSE3.addEventListener("click", () => {
+  POPUP3.classList.add("popup__fadeOut3");
+  setTimeout(() => {
+    POPUP3.classList.add("hidden");
+    POPUP3.classList.remove("popup__fadeOut3");
+  }, 300);
+});
+//

@@ -1,0 +1,293 @@
+:root {
+  --pink: #ff6666;
+  --green: #66ff99;
+  --black: #1b1b1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right bottom, var(--green), rgb(11, 156, 60));
+  color: rgb(61, 25, 91);
+  overflow: hidden;
+}
+.PL_LOGO {
+  margin-top: 32px;
+  margin-left: 32px;
+  height: 80px;
+  width: 80px;
+  left: 0;
+}
+header {
+  position: absolute;
+  display: flex;
+  height: 100px;
+  width: 500px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-top: 50px;
+  position: absolute;
+  left: 50px;
+}
+.league {
+  font-size: 48px;
+  color: rgb(61, 25, 91);
+  font-weight: 650;
+  position: absolute;
+}
+
+.menu {
+  position: absolute;
+  height: 300px;
+  top: 30vh;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.desc,
+.desc2,
+.desc3,
+.desc4 {
+  font-size: 24px;
+  cursor: pointer;
+  transform: scale(1);
+  font-weight: bold;
+  height: 24px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  display: flex;
+  width: 50vw;
+  height: 60vh;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  animation: fadeIn 0.3s;
+}
+.media.hidden {
+  display: none;
+}
+.media_title {
+  position: absolute;
+  top: 15px;
+}
+.movie_class {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+}
+.popup__info {
+  position: absolute;
+  width: 75vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 20vw;
+  border-radius: 32px;
+  backdrop-filter: blur(100px);
+  animation: fadeIn 0.3s;
+}
+.popup__info.hidden {
+  display: none;
+}
+.popup__fadeOut {
+  animation: fadeOut 0.3s;
+}
+.info {
+  position: absolute;
+  width: 90%;
+  font-weight: 520;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.desc:hover {
+  transform: scale(1.05);
+}
+.desc2:hover,
+.desc3:hover,
+.desc4:hover {
+  transform: scale(1.05);
+}
+.close,
+.close4 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 24px;
+}
+.popup__info2 {
+  position: absolute;
+  width: 50vw;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 35vw;
+  border-radius: 32px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  animation: fadeIn 0.3s;
+}
+.popup__info2.hidden {
+  display: none;
+}
+.table {
+  position: absolute;
+  width: 75%;
+  height: 531px;
+  border: none;
+}
+iframe {
+  width: 100%;
+  border: none;
+  transition: all 300ms ease;
+  height: 531px;
+}
+.close2,
+.close3 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 24px;
+}
+.popup__fadeOut2 {
+  animation: fadeOut 0.3s;
+}
+.teams {
+  position: absolute;
+  width: 75vw;
+  height: 570px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 20vw;
+  border-radius: 32px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s;
+}
+.teams.hidden {
+  display: none;
+}
+.teams_league {
+  position: absolute;
+  top: 50px;
+  left: 15%;
+}
+.teams_league2 {
+  position: absolute;
+  top: 50px;
+  right: 15%;
+}
+.team {
+  font-size: 20px;
+  margin-bottom: 26px;
+  position: relative;
+  list-style: none;
+}
+.mini_logo {
+  position: absolute;
+  left: -60px;
+  top: -20px;
+  width: 44px;
+  height: 44px;
+}
+.ars_logo {
+  position: absolute;
+  left: -60px;
+  top: -20px;
+  width: 40px;
+  height: 44px;
+}
+.bri_logo {
+  position: absolute;
+  left: -70px;
+  top: -20px;
+  width: 65px;
+  height: 44px;
+}
+.wolv_logo {
+  position: absolute;
+  left: -77px;
+  top: -20px;
+  width: 80px;
+  height: 55px;
+}
+.ast_logo {
+  position: absolute;
+  left: -56px;
+  top: -20px;
+  width: 37px;
+  height: 45px;
+}
+.leeds_logo {
+  position: absolute;
+  left: -82px;
+  top: -20px;
+  width: 90px;
+  height: 45px;
+}
+.fulham_logo {
+  position: absolute;
+  left: -72px;
+  top: -20px;
+  width: 70px;
+  height: 45px;
+}
+.afcb_logo {
+  position: absolute;
+  left: -55px;
+  top: -20px;
+  width: 35px;
+  height: 45px;
+}
+.popup__fadeOut3 {
+  animation: fadeOut 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
