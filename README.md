@@ -1,5 +1,7 @@
-# Strona o piłce nożnej
+# Website about football
+
+Work in progress
 
 ## Language:
 
-HTML, CSS
+HTML, CSS, JavaScript
