@@ -7,9 +7,11 @@ const POPUP_CLOSE3 = document.querySelector(".close3");
 const TAB = document.querySelectorAll(".desc");
 const POPUP4 = document.querySelector(".media");
 const POPUP_CLOSE4 = document.querySelector(".close4");
+const Video = document.querySelector("iframe");
 
 TAB.forEach((desc) => {
   desc.addEventListener("click", (e) => {
+    console.log(e.target);
     if (e.target.innerText === "Informacje o lidze") {
       POPUP.classList.remove("hidden");
       POPUP2.classList.add("hidden");
@@ -56,7 +58,9 @@ TAB.forEach((desc) => {
       POPUP3.classList.add("hidden");
 
       POPUP_CLOSE4.addEventListener("click", () => {
+        stopVideo();
         POPUP4.classList.add("popup__fadeOut3");
+
         setTimeout(() => {
           POPUP4.classList.add("hidden");
           POPUP4.classList.remove("popup__fadeOut3");
@@ -65,3 +69,12 @@ TAB.forEach((desc) => {
     }
   });
 });
+
+Video.addEventListener("mouseover", (e) => {
+  console.log(e.target.src);
+});
+
+function stopVideo() {
+  let temp = Video.src;
+  Video.src = temp;
+}
